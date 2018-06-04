@@ -14,13 +14,19 @@
 
 <div class="copyright">
   <span class="power-by">
-    {{ (printf (T "powered") `<a class="hexo-link" href="https://gohugo.io">Hugo</a>`) | safeHTML }}
+    {{ (printf (T "powered") `<a class="hexo-link" target="_blank" href="https://gohugo.io">Hugo</a>`) | safeHTML }}
   </span>
+  <span class="theme-info">
+    with theme
+    <a class="theme-link" target="_blank" href="https://github.com/wangkaibo/hugo-theme-even">Even</a>
+  </span>
+ {{ if .Site.Params.hostedByCodingPage.enable -}}
   <span class="division">|</span>
   <span class="theme-info">
-    {{ T "theme" }} - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+    Hosted by
+  <a target="_blank" href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
   </span>
+  {{- end }}
 
   {{ if .Site.Params.busuanzi.enable -}}
   <div class="busuanzi-footer">
@@ -44,9 +50,6 @@
       {{ .Site.Params.since }} - 
     {{ end }}
     {{- $current }}
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
     <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
   </span>
 </div>

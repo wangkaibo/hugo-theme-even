@@ -5,7 +5,7 @@
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Default';
+$theme-color-config: 'Dark Black';
 
 // Default theme color map
 $theme-color-map: (
@@ -13,7 +13,8 @@ $theme-color-map: (
   'Mint Green': #16982B #f5f5f5,
   'Cobalt Blue': #0047AB #f0f2f5,
   'Hot Pink': #FF69B4 #f8f5f5,
-  'Dark Violet': #9932CC #f5f4fa
+  'Dark Violet': #9932CC #f5f4fa,
+  'Dark Black': #000000 #FFFFFF
 );
 
 // Check theme color config.
@@ -95,7 +96,7 @@ $header-padding: 20px 20px !default;
 $logo-font-size: 48px !default;
 
 // Font family of the logo.
-$logo-font-family: 'Chancery', cursive, LiSu, sans-serif !default;
+$logo-font-family: cursive, LiSu, sans-serif !default;
 
 // Margin of menu item.
 $menu-item-margin-left: 10px !default;
